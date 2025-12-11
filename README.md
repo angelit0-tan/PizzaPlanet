@@ -1,22 +1,36 @@
 ### `Setup`
 
-# env
-Rename .env.example into .env
+Add .env:
 
-# `docker`
-docker compose up -d --build
+```bash
+    Rename .env.example into .env
+```
 
-# `composer`
+Make sure to use docker:
+
+```bash
+    docker compose up -d --build
+```
+
+Make sure to install the dependencies and migration:
+
+```bash
+# composer
 composer install
 
-# `npm`
+# npm
 npm install
 
-# `migrate`
+# migrate
 php artisan migrate
 
-# `run`
+# run
 npm run dev
+```
 
-# `PHPUnit test`
+For UnitTesting:
+
+```bash
+# unit test
 php artisan test --filter OrderTest --stop-on-failure
+```
