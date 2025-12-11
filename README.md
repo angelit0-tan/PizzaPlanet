@@ -17,3 +17,6 @@ php artisan migrate
 
 # `run`
 npm run dev
+
+# `PHPUnit test`
+php artisan test --filter OrderTest --stop-on-failure
