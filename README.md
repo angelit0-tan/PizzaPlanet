@@ -1,6 +1,6 @@
 ### `Setup`
 
-# `env`
+# env
 Rename .env.example into .env
 
 # `docker`
