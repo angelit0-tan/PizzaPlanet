@@ -22,7 +22,6 @@ composer install
 npm install
 
 # key generate
-
 php artisan key:generate
 
 # migrate
