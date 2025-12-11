@@ -23,14 +23,25 @@ npm install
 
 # migrate
 php artisan migrate
-
-# run
-npm run dev
 ```
 
-For UnitTesting:
+Run database seeder:
 
 ```bash
-# PHPUnit Test
+# db seeder
+php artisan db:seed --class=DatabaseSeeder
+```
+
+PHPUnit Test:
+
+```bash
+# Order Test
 php artisan test --filter OrderTest --stop-on-failure
+```
+
+Run the system:
+
+```bash
+# run
+npm run dev
 ```
