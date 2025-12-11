@@ -21,6 +21,10 @@ composer install
 # npm
 npm install
 
+# key generate
+
+php artisan key:generate
+
 # migrate
 php artisan migrate
 ```
