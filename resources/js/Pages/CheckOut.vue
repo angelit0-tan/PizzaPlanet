@@ -20,10 +20,7 @@
                         </span>
                     </div>
                 </template>
-                <div class="d-flex flex-wrap gap-1 mb-5">
-                    test
-                </div>
-                <div>
+                <div class="mt-4">
                     <payment-form :pizza="pizza" :price="pizza.price"/>
                 </div>
             </div>
