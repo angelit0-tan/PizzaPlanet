@@ -3,13 +3,13 @@
 Add .env:
 
 ```bash
-    Rename .env.example into .env
+Rename .env.example into .env
 ```
 
 Make sure to use docker:
 
 ```bash
-    docker compose up -d --build
+docker compose up -d --build
 ```
 
 Make sure to install the dependencies and migration:
@@ -31,6 +31,6 @@ npm run dev
 For UnitTesting:
 
 ```bash
-# unit test
+# PHPUnit Test
 php artisan test --filter OrderTest --stop-on-failure
 ```
