@@ -6,7 +6,7 @@ Add .env:
 Rename .env.example into .env
 ```
 
-Make sure to use docker:
+Build Docker Image:
 
 ```bash
 docker compose up -d --build
@@ -16,35 +16,41 @@ Make sure to install the dependencies and migration:
 
 ```bash
 # composer
-composer install
+docker-compose exec app composer install
 
 # npm
-npm install
+docker-compose exec app npm install
 
 # key generate
-php artisan key:generate
+docker-compose exec app php artisan key:generate
 
 # migrate
-php artisan migrate
+docker-compose exec app php artisan migrate
 ```
 
 Run database seeder:
 
 ```bash
 # db seeder
-php artisan db:seed --class=DatabaseSeeder
+docker-compose exec app php artisan db:seed --class=DatabaseSeeder
 ```
 
 PHPUnit Test:
 
 ```bash
 # Order Test
-php artisan test --filter OrderTest --stop-on-failure
+docker-compose exec app php artisan test --filter OrderTest --stop-on-failure
 ```
 
 Run the system:
 
 ```bash
 # run
-npm run dev
+docker-compose exec app npm run dev
 ```
+
+Access Localhost:
+```bash
+http://localhost:1941/
+```
+
